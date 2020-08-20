@@ -6,10 +6,10 @@ import { MdPeople } from 'react-icons/md';
 import { FaLocationArrow } from 'react-icons/fa';
 const UserCard = ({ user }) => {
     return (
-        <Card className=" mt-10 mb-4 " style={{backgroundColor:'	#FFA07A'}} >
+        <Card className=" mt-10 mb-4" style={{backgroundColor:'	#FFA07A'}} >
 
             <CardTitle>
-                <CardImg src={user.avatar_url} alt="" height='300px' />
+                <CardImg src={user.avatar_url} alt="" height='300px' style={{paddingLeft:"2.8rem"}} />
             </CardTitle>
 
 
@@ -23,7 +23,7 @@ const UserCard = ({ user }) => {
                     <p style={{color:'black'}}><FaSuitcase className='mr-2' />
                 Open for Job: {user.hireable ? 'Yes' : 'No'}</p></div>
                 <div style={{color:'black'}}><p><MdPeople className='mr-2' />Followers: {user.followers}  </p></div>
-                <div className="text-secondary" style={{color:'black'}}>View Full Github Profile <a href={user.html_url}><FaLocationArrow color='black' /></a></div>
+                <div className="text-secondary" style={{color:'black',paddingBottom:"1rem"}}>View Full Github Profile <a href={user.html_url}><FaLocationArrow color='black' /></a></div>
             </CardBody>
         </Card>
     );
