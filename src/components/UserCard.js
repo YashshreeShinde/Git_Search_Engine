@@ -9,11 +9,11 @@ const UserCard = ({ user }) => {
         <Card className=" mt-10 mb-4 " style={{backgroundColor:'	#FFA07A'}} >
 
             <CardTitle>
-                <CardImg src={user.avatar_url} alt="" height='300px' style={{padding:'3rem'}}/>
+                <CardImg src={user.avatar_url} alt="" height='300px' />
             </CardTitle>
 
 
-            <CardBody style={{paddingLeft:'3rem'}}>
+            <CardBody style={{paddingLeft:'4rem'}}>
                 <div className='font-weight-bold' ><h3 style={{color:'black' }}>{user.name}</h3></div>
                 <div className="text-info" style={{color:'black'}}>
                     <GrLocation className='mr-2' style={{color:'black'}}/>
